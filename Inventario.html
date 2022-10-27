@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ING OR Spa</title> 
+</head>
+
+
+<body>
+    <h1>OfiDoc Web</h1>
+    <h3>Inventario</h3> 
+    <div class="row">
+     <div class="col l5 offset-l1 s12">
+        <table id="transactionTable3">
+            <caption>Registro de inventario</caption>
+            <thead>
+            <tr>
+                <th>
+                    Tipo de componente
+                </th>
+                <th>
+                    Nombre del producto o servicio
+                </th>
+                <th>
+                    Fecha 
+                </th>
+                <th>
+                    Stock 
+                </th>
+                <th>
+                    Unidades vendidas 
+                </th>
+                <th>
+                    Categoria
+                </th>
+                <th>
+                    Eliminar
+                </th>
+            </tr>
+        </thead>
+        </table>
+    </div>
+        <div class="col l5 s12">
+        <div class="col s8 offset-s2">
+        <form id="transactionForm3">
+        <div class="formField3">
+            <caption>Formulario de Inventario</caption>
+             <p>
+                <span>Tipo de componente</span>
+                <label>
+                    <i class="material-icons">add</i>
+                  <input value="Hardware" class="with-gap" name="transactionType3" type="radio" checked />
+                  <span>Hardware</span>
+                </label>
+                <label>
+                    <i class="material-icons">indeterminate_check_box</i>
+                    <input value="Software" class="with-gap" name="transactionType3" type="radio" checked />
+                    <span>Software</span>
+                  </label>
+              </p>
+        </div>
+        <div class="input-field">
+            <input autocomplete="off" id="descriptionType3" name="descriptionType3" type="text" class="validate">
+            <label for="descriptionType3">Nombre del producto o servicio</label>
+          </div>
+          <div class="input-field">
+            <input autocomplete="off" id="DateType3" name="DateType3" type="text" class="validate">
+            <label for="DateType3">Fecha</label>
+          </div>
+        <div  class="input-field">
+            <input id="stockType3" type="text" class="validate" name="stockType3">
+            <label for="stockType3">Stock</label>
+        </div>
+        <div  class="input-field">
+            <input id="amountType3" type="number" class="validate" name="amountType3">
+            <label for="amountType3">Unidades vendidas</label>
+        </div>
+        <div  class="formField">
+            <label for ="categoryType3">Categoría</label>
+            <select class="browser-default" id="categoryType3"  name="categoryType3">
+            </select>
+        </div>
+        <br>
+        <div  class="formField">
+            <button class="btn waves-effect waves-light" id="botonDeEnvio3">Añadir
+            <i class="material-icons right">arrow_forward</i></button>
+        </div>  
+        </div> 
+        
+    </form>
+        </div>
+        
+        
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="Inventario/resources/js/html2pdf.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="Inventario/resources/js/scripts.js"></script>
+    <link rel="stylesheet" href="Inventario/resources/css/styles.css">
+    </div>
+    <br>
+    <h6>Presiona el siguiente botón para crear informe de registros en el inventario</h6>
+    <h6>
+        <button2 class="btn waves-effect waves-light" id="btnCrearPDF3">Click aquí<i class="material-icons right">arrow_forward</i></button2>
+    </h6>
+   
+
+</body>
+
+   
+
+</html>

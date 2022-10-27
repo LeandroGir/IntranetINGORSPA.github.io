@@ -1,0 +1,46 @@
+
+body {
+    max-width: 100%;
+}
+
+
+td, th{
+    text-align: center;
+    padding: 10px;
+    border: solid red 1px;
+    
+
+}
+
+    .tableFormat table {
+        margin: 10px auto;
+
+    }
+
+h1 {
+    text-align: center;
+}
+h3 {
+    text-align: center;
+}
+h6 {
+    text-align: center;
+}
+form{
+    text-align: center;
+    
+}
+
+
+
+.botonDeEnvio3{
+    font-size: 23px;
+}
+.btnCrearPDF3{
+    text-align: center;
+}
+
+tbody{
+    background-color: white;
+}
+

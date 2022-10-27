@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ING OR Spa</title> 
+</head>
+
+
+<body>
+    <h1>OfiDoc Web</h1>
+    <h3>Transacciones economicas</h3> 
+    <div class="row">
+     <div class="col l5 offset-l1 s12">
+        <table id="transactionTable">
+            <caption>Ordenes de ingresos y egresos</caption>
+            <thead>
+            <tr>
+                <th>
+                    Tipo
+                </th>
+                <th>
+                    Nombre
+                </th>
+                <th>
+                    Fecha 
+                </th>
+                <th>
+                    Monto 
+                </th>
+                <th>
+                    Categoria
+                </th>
+                <th>
+                    Eliminar
+                </th>
+            </tr>
+        </thead>
+        </table>
+    </div>
+        <div class="col l5 s12">
+        <div class="col s8 offset-s2">
+        <form id="transactionForm">
+        <div class="formField">
+            <caption>Formulario de Orden de Transacción</caption>
+             <p>
+                <span>Tipo de Transacción</span>
+                <label>
+                    <i class="material-icons">add</i>
+                  <input value="Ingreso" class="with-gap" name="transactionType" type="radio" checked />
+                  <span>Ingreso</span>
+                </label>
+                <label>
+                    <i class="material-icons">indeterminate_check_box</i>
+                    <input value="Egreso" class="with-gap" name="transactionType" type="radio" checked />
+                    <span>Egreso</span>
+                  </label>
+              </p>
+        </div>
+        <div class="input-field">
+            <input autocomplete="off" id="descriptionType" name="descriptionType" type="text" class="validate">
+            <label for="descriptionType">Nombre del servicio,producto o transaccion ajena a ING OR Spa</label>
+          </div>
+          <div class="input-field">
+            <input autocomplete="off" id="DateType" name="DateType" type="text" class="validate">
+            <label for="DateType">Fecha</label>
+          </div>
+        <div  class="input-field">
+            <input id="amountType" type="number" class="validate" name="amountType">
+            <label for="amountType">Monto</label>
+        </div>
+        <div  class="formField">
+            <label for ="categoryType">Categoría</label>
+            <select class="browser-default" id="categoryType"  name="categoryType">
+            </select>
+        </div>
+        <br>
+        <div  class="formField">
+            <button class="btn waves-effect waves-light" id="botonDeEnvio">Añadir
+            <i class="material-icons right">arrow_forward</i></button>
+        </div>  
+        </div> 
+        
+    </form>
+        </div>
+        
+        
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="resources/js/html2pdf.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="resources/js/scripts.js"></script>
+    <link rel="stylesheet" href="./resources/css/styles.css">
+    </div>
+    <br>
+    <h6>Presiona el siguiente botón para crear informe de orden de ingresos:</h6>
+    <h6>
+        <button2 class="btn waves-effect waves-light" id="btnCrearPDF">Click aquí<i class="material-icons right">arrow_forward</i></button2>
+    </h6>
+   
+
+</body>
+
+   
+
+</html>
